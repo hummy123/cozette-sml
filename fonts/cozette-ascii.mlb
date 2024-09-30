@@ -1,0 +1,111 @@
+$(SML_LIB)/basis/basis.mlb
+
+ann
+  "allowVectorExps true"
+in
+  local
+    ascii-zero.sml
+    ascii-one.sml
+    ascii-two.sml
+    ascii-three.sml
+    ascii-four.sml
+    ascii-five.sml
+    ascii-six.sml
+    ascii-seven.sml
+    ascii-eight.sml
+    ascii-nine.sml
+
+    ampersand.sml
+    angle-bracket-closed.sml
+    angle-bracket-open.sml
+    ascii-at.sml
+    ascii-dot.sml
+    ascii-hash.sml
+    ascii-minus.sml
+    ascii-percent.sml
+    ascii-pipe.sml
+    ascii-plus.sml
+    asterisk.sml
+    backtick.sml
+    bracket-closed.sml
+    bracket-open.sml
+    caret.sml
+    colon.sml
+    comma.sml
+    curly-brace-closed.sml
+    curly-brace-open.sml
+    dollar.sml
+    exclamation-mark.sml
+    
+    lower-case-a.sml
+    lower-case-b.sml
+    lower-case-c.sml
+    lower-case-d.sml
+    lower-case-e.sml
+    lower-case-f.sml
+    lower-case-g.sml
+    lower-case-h.sml
+    lower-case-i.sml
+    lower-case-j.sml
+    lower-case-k.sml
+    lower-case-l.sml
+    lower-case-m.sml
+    lower-case-n.sml
+    lower-case-o.sml
+    lower-case-p.sml
+    lower-case-q.sml
+    lower-case-r.sml
+    lower-case-s.sml
+    lower-case-t.sml
+    lower-case-u.sml
+    lower-case-v.sml
+    lower-case-w.sml
+    lower-case-x.sml
+    lower-case-y.sml
+    lower-case-z.sml
+
+    question-mark.sml
+    quotes-double.sml
+    quotes-single.sml
+    semi-colon.sml
+    slash-backwards.sml
+    slash-forwards.sml
+    square-bracket-closed.sml
+    square-bracket-open.sml
+    tilde.sml
+    underscore.sml
+
+    upper-case-a.sml
+    upper-case-b.sml
+    upper-case-c.sml
+    upper-case-d.sml
+    upper-case-e.sml
+    upper-case-f.sml
+    upper-case-g.sml
+    upper-case-h.sml
+    upper-case-i.sml
+    upper-case-j.sml
+    upper-case-k.sml
+    upper-case-l.sml
+    upper-case-m.sml
+    upper-case-n.sml
+    upper-case-o.sml
+    upper-case-p.sml
+    upper-case-q.sml
+    upper-case-r.sml
+    upper-case-s.sml
+    upper-case-t.sml
+    upper-case-u.sml
+    upper-case-v.sml
+    upper-case-w.sml
+    upper-case-x.sml
+    upper-case-y.sml
+    upper-case-z.sml
+    
+    ascii-equals.sml
+    space.sml
+    unknown-char.sml
+  in
+    cozette-ascii.sml
+  end
+end
