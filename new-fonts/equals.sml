@@ -1,0 +1,77 @@
+structure Equals = 
+struct
+  fun xToNdc (xOffset, xpos, scale, halfWidth) =
+    ((xpos * scale + xOffset) - halfWidth) / halfWidth
+
+  fun yToNdc (yOffset, ypos, scale, halfHeight) =
+   ~(((ypos * scale + yOffset) - halfHeight) / halfHeight)
+
+  fun lerp (xOffset: Real32.real, yOffset, scale, windowWidth, windowHeight) =
+    let
+      val halfWidth = windowWidth / 2.0
+      val halfHeight = windowHeight / 2.0
+    in
+     #[
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 7.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 7.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 6.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 6.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 7.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 6.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 9.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 9.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 8.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 8.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 9.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 8.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000
+      ]
+    end
+end
