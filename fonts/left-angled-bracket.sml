@@ -8,9 +8,7 @@ struct
 
   fun lerp (xOffset: Real32.real, yOffset, scale, windowWidth, windowHeight, r, g, b) =
     let
-      val windowWidth = Real32.fromInt windowWidth
       val halfWidth = windowWidth / 2.0
-      val windowHeight = Real32.fromInt windowHeight
       val halfHeight = windowHeight / 2.0
     in
      #[
