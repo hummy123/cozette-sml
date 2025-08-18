@@ -6,7 +6,7 @@ struct
   fun yToNdc (yOffset, ypos, scale, halfHeight) =
    ~(((ypos * scale + yOffset) - halfHeight) / halfHeight)
 
-  fun lerp (xOffset, yOffset, scale, windowWidth, windowHeight, r, g, b) =
+  fun lerp (xOffset: Real32.real, yOffset, scale, windowWidth, windowHeight, r, g, b) =
     let
       val halfWidth = windowWidth / 2.0
       val halfHeight = windowHeight / 2.0
