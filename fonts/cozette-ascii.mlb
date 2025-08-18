@@ -1,5 +1,4 @@
 $(SML_LIB)/basis/basis.mlb
-
 ann
   "allowVectorExps true"
 in
@@ -14,29 +13,26 @@ in
     ascii-seven.sml
     ascii-eight.sml
     ascii-nine.sml
-
+    ascii-space.sml
     ampersand.sml
-    angle-bracket-closed.sml
-    angle-bracket-open.sml
-    ascii-at.sml
-    ascii-dot.sml
-    ascii-hash.sml
-    ascii-minus.sml
-    ascii-percent.sml
-    ascii-pipe.sml
-    ascii-plus.sml
     asterisk.sml
+    ascii-at.sml
     backtick.sml
-    bracket-closed.sml
-    bracket-open.sml
+    backward-slash.sml
     caret.sml
     colon.sml
     comma.sml
-    curly-brace-closed.sml
-    curly-brace-open.sml
     dollar.sml
-    exclamation-mark.sml
-    
+    quotes-double.sml
+    equals.sml
+    exclamation_mark.sml
+    forward-slash.sml
+    ascii-dot.sml
+    ascii-hash.sml
+    left-angled-bracket.sml
+    left-brace.sml
+    left-bracket.sml
+    left-paren.sml
     lower-case-a.sml
     lower-case-b.sml
     lower-case-c.sml
@@ -63,18 +59,20 @@ in
     lower-case-x.sml
     lower-case-y.sml
     lower-case-z.sml
-
+    ascii-minus.sml
+    ascii-percent.sml
+    ascii-pipe.sml
+    ascii-plus.sml
     question-mark.sml
-    quotes-double.sml
+    right-angled-bracket.sml
+    right-brace.sml
+    right-bracket.sml
+    right-paren.sml
+    semicolon.sml
     quotes-single.sml
-    semi-colon.sml
-    slash-backwards.sml
-    slash-forwards.sml
-    square-bracket-closed.sml
-    square-bracket-open.sml
-    tilde.sml
+    ascii-tilde.sml
     underscore.sml
-
+    unknown.sml
     upper-case-a.sml
     upper-case-b.sml
     upper-case-c.sml
@@ -101,10 +99,6 @@ in
     upper-case-x.sml
     upper-case-y.sml
     upper-case-z.sml
-    
-    ascii-equals.sml
-    space.sml
-    unknown-char.sml
   in
     cozette-ascii.sml
   end

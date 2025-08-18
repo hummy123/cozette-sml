@@ -1,27 +1,47 @@
-structure Underscore =
+structure Underscore = 
 struct
-  fun lerp (startX, startY, drawWidth, drawHeight, windowWidth, windowHeight, r, g, b) : Real32.real vector =
+  fun xToNdc (xOffset, xpos, scale, halfWidth) =
+    ((xpos * scale + xOffset) - halfWidth) / halfWidth
+
+  fun yToNdc (yOffset, ypos, scale, halfHeight) =
+   ~(((ypos * scale + yOffset) - halfHeight) / halfHeight)
+
+  fun lerp (xOffset: Real32.real, yOffset, scale, windowWidth, windowHeight) =
     let
-       val startX = Real32.fromInt startX
-       val startY = Real32.fromInt startY
-       val endY = windowHeight - startY
-       val startY = windowHeight - (startY + drawHeight)
-       val endX = startX + drawWidth
-       val windowHeight = windowHeight / 2.0
-       val windowWidth = windowWidth / 2.0
+      val halfWidth = windowWidth / 2.0
+      val halfHeight = windowHeight / 2.0
     in
-       #[      (((startX * (1.0 - 0.66666662693)) + (endX * 0.66666662693)) / windowWidth) - 1.0,
-      (((startY * (1.0 - 0.200000017881)) + (endY * 0.200000017881)) / windowHeight) - 1.0, r, g, b,
-      (((startX * (1.0 - 0.333333313465)) + (endX * 0.333333313465)) / windowWidth) - 1.0,
-      (((startY * (1.0 - 0.200000017881)) + (endY * 0.200000017881)) / windowHeight) - 1.0, r, g, b,
-      (((startX * (1.0 - 0.333333313465)) + (endX * 0.333333313465)) / windowWidth) - 1.0,
-      (((startY * (1.0 - 0.133333355188)) + (endY * 0.133333355188)) / windowHeight) - 1.0, r, g, b,
-      (((startX * (1.0 - 0.333333313465)) + (endX * 0.333333313465)) / windowWidth) - 1.0,
-      (((startY * (1.0 - 0.133333355188)) + (endY * 0.133333355188)) / windowHeight) - 1.0, r, g, b,
-      (((startX * (1.0 - 0.66666662693)) + (endX * 0.66666662693)) / windowWidth) - 1.0,
-      (((startY * (1.0 - 0.133333355188)) + (endY * 0.133333355188)) / windowHeight) - 1.0, r, g, b,
-      (((startX * (1.0 - 0.66666662693)) + (endX * 0.66666662693)) / windowWidth) - 1.0,
-      (((startY * (1.0 - 0.200000017881)) + (endY * 0.200000017881)) / windowHeight) - 1.0, r, g, b
-    ]
-  end
+     #[
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 12.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 12.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 11.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 11.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 12.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 11.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000
+      ]
+    end
 end
