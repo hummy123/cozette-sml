@@ -255,6 +255,6 @@ struct
     let
       val chrFun = Vector.sub (asciiTable, Char.ord chr)
     in
-      chrFun (posX, posY, scale, windowWidth, windowHeight)
+      chrFun (posX, posY, scale, windowWidth, windowHeight, r, g, b)
     end
 end
