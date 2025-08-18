@@ -1,4 +1,4 @@
-structure DoubleSpeechMarks = 
+structure QuotesDouble = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth

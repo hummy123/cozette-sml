@@ -1,4 +1,4 @@
-structure Percent = 
+structure AsciiPercent = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth

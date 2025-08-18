@@ -1,4 +1,4 @@
-structure Seven = 
+structure AsciiSeven = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth

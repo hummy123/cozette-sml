@@ -1,4 +1,4 @@
-structure FullStop = 
+structure QuotesSingle = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth
@@ -13,32 +13,32 @@ struct
     in
      #[
 xToNdc (xOffset, 1.000000000000000, scale, halfWidth),
-yToNdc (yOffset, 10.000000000000000, scale, halfHeight),
+yToNdc (yOffset, 5.000000000000000, scale, halfHeight),
 0.000000000000000,
 0.000000000000000,
 0.000000000000000,
-xToNdc (xOffset, 3.000000000000000, scale, halfWidth),
-yToNdc (yOffset, 10.000000000000000, scale, halfHeight),
-0.000000000000000,
-0.000000000000000,
-0.000000000000000,
-xToNdc (xOffset, 1.000000000000000, scale, halfWidth),
-yToNdc (yOffset, 8.000000000000000, scale, halfHeight),
+xToNdc (xOffset, 2.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 5.000000000000000, scale, halfHeight),
 0.000000000000000,
 0.000000000000000,
 0.000000000000000,
 xToNdc (xOffset, 1.000000000000000, scale, halfWidth),
-yToNdc (yOffset, 8.000000000000000, scale, halfHeight),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
 0.000000000000000,
 0.000000000000000,
 0.000000000000000,
-xToNdc (xOffset, 3.000000000000000, scale, halfWidth),
-yToNdc (yOffset, 10.000000000000000, scale, halfHeight),
+xToNdc (xOffset, 1.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
 0.000000000000000,
 0.000000000000000,
 0.000000000000000,
-xToNdc (xOffset, 3.000000000000000, scale, halfWidth),
-yToNdc (yOffset, 8.000000000000000, scale, halfHeight),
+xToNdc (xOffset, 2.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 5.000000000000000, scale, halfHeight),
+0.000000000000000,
+0.000000000000000,
+0.000000000000000,
+xToNdc (xOffset, 2.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
 0.000000000000000,
 0.000000000000000,
 0.000000000000000

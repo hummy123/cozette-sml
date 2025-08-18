@@ -1,4 +1,4 @@
-structure Six = 
+structure AsciiSix = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth

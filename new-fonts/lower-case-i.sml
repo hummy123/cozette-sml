@@ -1,4 +1,4 @@
-structure LowerCseI = 
+structure LowerCaseI = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth

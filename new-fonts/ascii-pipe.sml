@@ -1,4 +1,4 @@
-structure Pipe = 
+structure AsciiPipe = 
 struct
   fun xToNdc (xOffset, xpos, scale, halfWidth) =
     ((xpos * scale + xOffset) - halfWidth) / halfWidth
