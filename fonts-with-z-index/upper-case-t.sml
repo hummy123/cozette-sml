@@ -1,0 +1,66 @@
+structure UpperCaseT = 
+struct
+  fun xToNdc (xOffset, xpos, scale, halfWidth) =
+    ((xpos * scale + xOffset) - halfWidth) / halfWidth
+
+  fun yToNdc (yOffset, ypos, scale, halfHeight) =
+   ~(((ypos * scale + yOffset) - halfHeight) / halfHeight)
+
+  fun lerp (xOffset: Real32.real, yOffset, z, scale, windowWidth, windowHeight, 
+r, g, b) =
+    let
+      val halfWidth = windowWidth / 2.0
+      val halfHeight = windowHeight / 2.0
+    in
+     #[
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 3.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 3.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 0.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 3.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 5.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 2.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 10.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 3.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 10.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 2.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 2.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 3.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 10.000000000000000, scale, halfHeight),
+z,
+r, g, b,
+xToNdc (xOffset, 3.000000000000000, scale, halfWidth),
+yToNdc (yOffset, 2.000000000000000, scale, halfHeight),
+z,
+r, g, b
+      ]
+    end
+end
